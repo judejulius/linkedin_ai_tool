@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Learning journal</title>
+  <link rel="stylesheet" href="/static/login.css">
+  <script type="module" src="/static/login.js"></script>
+</head>
+<body>
+  <main class="card">
+    <div class="brand">Your learning journal</div>
+    <h1>Welcome back.</h1>
+    <p>Sign in to review your next post and share your progress.</p>
+    <div id="error" class="error" role="alert" hidden></div>
+    <form id="login-form">
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="username" required autofocus value="admin">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button id="submit" type="submit" disabled>Connecting…</button>
+    </form>
+    <noscript><p>Enable JavaScript to sign in to this dashboard.</p></noscript>
+    <p class="footer">Your private space to learn, reflect, and share.</p>
+  </main>
+</body>
+</html>

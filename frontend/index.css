@@ -1,0 +1,138 @@
+:root {
+  font-family:Inter,system-ui,sans-serif;
+  color:#172b29;
+  background:#f3f5f1}
+* {
+  box-sizing:border-box}
+body {
+  margin:0}
+header {
+  background:#173e36;
+  color:white;
+  padding:32px max(24px,calc((100vw - 1160px)/2));
+  }
+header small {
+  color:#a7cbb5;
+  text-transform:uppercase;
+  letter-spacing:2px}
+h1 {
+  font-size:34px;
+  letter-spacing:-1px;
+  margin:12px 0}
+header p {
+  color:#d2dfd8;
+  line-height:1.6}
+.shell {
+  max-width:1208px;
+  margin:auto;
+  padding:32px 24px}
+.grid {
+  display:grid;
+  grid-template-columns:minmax(0,2fr) minmax(260px,1fr);
+  gap:24px}
+.card {
+  background:white;
+  border:1px solid #dce3da;
+  border-radius:16px;
+  padding:26px;
+  margin-bottom:20px;
+  box-shadow:0 5px 20px #173e3605}
+h2 {
+  font-size:21px;
+  margin-top:0}
+h3 {
+  font-size:16px}
+.meta {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  font-size:13px;
+  color:#68786f}
+.badge {
+  background:#edf2e8;
+  color:#3f6246;
+  padding:6px 10px;
+  border-radius:20px;
+  text-transform:capitalize}
+.post {
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  line-height:1.75;
+  margin:24px 0;
+  font-size:16px}
+.actions {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  border-top:1px solid #eef1eb;
+  padding-top:20px}
+button {
+  font:inherit;
+  font-size:14px;
+  font-weight:600;
+  padding:12px 16px;
+  border-radius:8px;
+  border:1px solid #bccbbe;
+  cursor:pointer;
+  background:white;
+  color:#234638}
+button.primary {
+  background:#236349;
+  color:white;
+  border-color:#236349}
+button.decline {
+  color:#a13c38;
+  border-color:#e2c6c2}
+textarea {
+  width:100%;
+  min-height:145px;
+  resize:vertical;
+  border:1px solid #bdc9bd;
+  border-radius:8px;
+  padding:12px;
+  font:inherit;
+  line-height:1.5;
+  margin:8px 0 14px}
+small,.muted {
+  color:#68786f;
+  line-height:1.6}
+.notice {
+  padding:16px 20px;
+  background:#e3efdf;
+  border:1px solid #b9d1ac;
+  border-radius:10px;
+  margin-bottom:20px}
+.note {
+  border-top:1px solid #e8ede5;
+  padding:14px 0;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  font-size:14px;
+  line-height:1.6}
+.empty {
+  padding:35px 0;
+  color:#68786f}
+.memory {
+  white-space:pre-wrap;
+  font-size:14px;
+  line-height:1.7;
+  overflow-wrap:anywhere}
+details summary {
+  cursor:pointer;
+  font-weight:600}
+a {
+  color:#236349}
+@media(max-width:760px) {
+  .grid {
+  grid-template-columns:1fr}
+.shell {
+  padding:20px 14px}
+.card {
+  padding:20px}
+h1 {
+  font-size:28px}
+}
+
+
+.signout { display: flex; justify-content: flex-end; margin-bottom: 20px; }

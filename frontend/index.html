@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Learning journal · Review</title>
+  <link rel="stylesheet" href="/static/index.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <header>
+    <small>Your learning journal</small>
+    <h1>A little progress, worth sharing.</h1>
+    <p>Machine learning &amp; reinforcement learning<br>
+      Drafts arrive at 20:00 · <span id="timezone">Loading…</span> · You choose what goes live.</p>
+  </header>
+  <main class="shell">
+    <div class="signout"><button id="logout" disabled>Sign out</button></div>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <noscript><div class="notice">Enable JavaScript to load drafts and review posts.</div></noscript>
+    <div class="grid">
+      <section aria-label="Drafts and history">
+        <div class="card">
+          <h2>Review your next post</h2>
+          <p class="muted">Approve publishes immediately. Decline keeps it off LinkedIn.
+            Generate New gives you another version to review.</p>
+          <button id="prepare" disabled>Prepare a draft now</button>
+          <button id="refresh" disabled>Refresh</button>
+        </div>
+        <div id="posts" aria-live="polite"><div class="card empty">Loading your journal…</div></div>
+      </section>
+      <aside>
+        <div class="card">
+          <h2>Your story, continued</h2>
+          <p class="muted">The AI chooses the next topic from your writing profile and published posts.
+            Your preferences guide the first update; later posts build on the story.</p>
+          <p class="muted">No daily notes needed. Just review, approve, decline, or ask for a new version.</p>
+        </div>
+        <div class="card"><details><summary>Your last LinkedIn post</summary><p id="previous" class="memory"></p></details></div>
+        <div class="card"><details><summary>What your journal remembers</summary><p id="memory" class="memory"></p></details></div>
+      </aside>
+    </div>
+    <p id="model" class="muted">Private review dashboard</p>
+  </main>
+</body>
+</html>

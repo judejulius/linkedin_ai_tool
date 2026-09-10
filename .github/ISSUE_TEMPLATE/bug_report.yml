@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible problem using redacted or fictional data.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include tokens, .env contents, or private drafts. For vulnerabilities, follow SECURITY.md instead."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit/version, OS, Python version, Docker or local setup, and browser.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted logs or screenshots

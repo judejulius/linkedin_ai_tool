@@ -1,0 +1,10 @@
+*
+!requirements.txt
+!LICENSE
+!scheduler.py
+!linkedin_auth.py
+!dashboard.py
+!frontend/
+!frontend/**
+!examples/
+!examples/**

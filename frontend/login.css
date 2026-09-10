@@ -1,0 +1,72 @@
+* {
+  box-sizing:border-box}
+body {
+  margin:0;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  padding:24px;
+  background:#f3f5f1;
+  color:#172b29;
+  font-family:Inter,system-ui,sans-serif}
+.card {
+  width:100%;
+  max-width:440px;
+  background:white;
+  border:1px solid #dce3da;
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 16px 60px #173e360b}
+.brand {
+  color:#236349;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+  font-weight:700}
+h1 {
+  font-size:32px;
+  letter-spacing:-1px;
+  margin:24px 0 10px}
+p {
+  color:#68786f;
+  line-height:1.6;
+  margin-bottom:28px}
+label {
+  display:block;
+  font-size:14px;
+  font-weight:600;
+  margin:20px 0 8px}
+input {
+  width:100%;
+  border:1px solid #bdc9bd;
+  border-radius:8px;
+  padding:13px;
+  font:inherit}
+input:focus {
+  outline:2px solid #236349;
+  outline-offset:2px}
+button {
+  width:100%;
+  margin-top:28px;
+  padding:14px;
+  border:0;
+  border-radius:8px;
+  background:#236349;
+  color:white;
+  font:inherit;
+  font-weight:600;
+  cursor:pointer}
+.error {
+  background:#fff1ef;
+  color:#993b36;
+  border:1px solid #ebc8c1;
+  border-radius:8px;
+  padding:12px;
+  line-height:1.5;
+  font-size:14px}
+.footer {
+  text-align:center;
+  font-size:12px;
+  margin:24px 0 0;
+  color:#68786f}
+

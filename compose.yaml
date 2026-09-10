@@ -1,0 +1,23 @@
+services:
+  dashboard:
+    build: .
+    env_file: .env
+    ports:
+      - "127.0.0.1:5678:8000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    init: true
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  scheduler:
+    build: .
+    command: ["python", "scheduler.py", "run"]
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    init: true

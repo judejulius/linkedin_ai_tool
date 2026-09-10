@@ -1,0 +1,15 @@
+[Unit]
+Description=Daily LinkedIn learning journal
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/development/linkedin_scheduler
+ExecStart=/root/development/linkedin_scheduler/.venv/bin/python scheduler.py run
+Restart=on-failure
+RestartSec=30
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
